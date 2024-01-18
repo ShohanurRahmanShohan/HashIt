@@ -23,4 +23,4 @@ Explore the secure world of HashIt for your cryptographic needs.
 [Link to HashIt Web App](#)
 
 ## Author
-[Your Name]
+[Shohan](www.facebook.com/0shohan0)
