@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .love-section {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .love-section a {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HashIt</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <label for="key"><i class="fas fa-key"></i> Key:</label>
+                <input type="text" id="key" class="form-control" placeholder="Enter key">
+
+                <label for="message"><i class="fas fa-comment"></i> Message:</label>
+                <textarea id="message" class="form-control" rows="3" placeholder="Enter message"></textarea>
+
+                <label for="hash"><i class="fas fa-fingerprint"></i> Hash:</label>
+                <textarea id="hash" class="form-control" rows="3" placeholder="Generated hash or enter hash"></textarea>
+
+                <button onclick="generateHash()"><i class="fas fa-lock"></i> Generate Hash</button>
+                <br>
+                <button onclick="getMessageFromHash()"><i class="fas fa-unlock"></i> Get Message</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="love-section">
+        Made with <i class="fas fa-heart"></i> by <a href="https://www.facebook.com/0shohan0" target="_blank">Shohan</a>
+    </div>
+    <!-- Logic of the application  -->
+    <script src="logic.js"></script>
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
